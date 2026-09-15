@@ -744,9 +744,7 @@ export default function AuroreBanque() {
                 Entrer dans l'espace banque
               </button>
 
-              <div style={{ fontSize: 12, color: "#8A93A3", marginTop: 14, textAlign: "center" }}>
-                Démo — identifiant : <b>banque</b> / mot de passe : <b>admin2026</b>
-              </div>
+              
             </form>
           )}
         </div>
