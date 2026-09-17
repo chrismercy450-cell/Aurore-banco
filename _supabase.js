@@ -1,4 +1,4 @@
-import { createClient } from "@supabase/supabase-js";
+import { createClient } from "@supabase/api/_supabase.js;
 
 // Client cote serveur uniquement (jamais expose au navigateur).
 // SUPABASE_URL et SUPABASE_SECRET_KEY sont des variables d'environnement
