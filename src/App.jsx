@@ -8,7 +8,7 @@ const DEVISE = "$";
 
 function formaterMontant(montant) {
   const n = Number(montant) || 0;
-  return ${n.toLocaleString("fr-FR")} ${DEVISE};
+  return `${n.toLocaleString("fr-FR")} ${DEVISE}`;
 }
 
 async function appelApi(url, options = {}) {
