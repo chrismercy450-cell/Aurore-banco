@@ -84,7 +84,7 @@ export default function App() {
 
   async function rafraichirCompte(id) {
     try {
-      const data = await appelApi(/api/compte?id=${id});
+      const data = await appelApi(`/api/compte?id=${id}`);
       setCompte((prev) => {
         const maj = { ...prev, ...data.compte };
         localStorage.setItem("aurore_compte", JSON.stringify(maj));
@@ -96,14 +96,14 @@ export default function App() {
 
   async function chargerComptesAdmin(adminId) {
     try {
-      const data = await appelApi(/api/admin-comptes?adminId=${adminId});
+      const data = await appelApi(`/api/admin-comptes?adminId=${adminId}`);
       setListeComptes(data.comptes || []);
     } catch (e) {}
   }
 
   async function chargerRetraitsAdmin(adminId) {
     try {
-      const data = await appelApi(/api/admin-retraits?adminId=${adminId});
+      const data = await appelApi(`/api/admin-retraits?adminId=${adminId}`);
       setListeRetraits(data.retraits || []);
     } catch (e) {}
   }
