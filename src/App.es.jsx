@@ -8,7 +8,7 @@ const DEVISE = "$";
 
 function formatearMonto(monto) {
   const n = Number(monto) || 0;
-  return ${n.toLocaleString("es-ES")} ${DEVISE};
+  return `${n.toLocaleString("es-ES")} ${DEVISE}`;
 }
 
 async function llamarApi(url, options = {}) {
